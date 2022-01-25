@@ -17,8 +17,7 @@ public class BMIModel {
 
     public static String formatBMI(double bmi)
     {
-        bmi = Math.round(bmi*10.0)/10.0;
-        String bmi1 = String.valueOf(bmi);
+        String bmi1 = String.format("%.2f", bmi);
         return bmi1;
     }
 
